@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a demo of Século Explorer — the intelligent property search tool for the Portuguese real estate market." />
+  <title>Request a Demo — Século Explorer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Século Explorer — Home">
+        <img src="assets/logo-light.svg" alt="Século Explorer" />
+      </a>
+
+      <!-- Links -->
+      <ul class="nav-links">
+        <li><a href="index.html" data-en="Home" data-pt="Início">Home</a></li>
+        <li><a href="index.html#how-it-works" data-en="How It Works" data-pt="Como Funciona">How It Works</a></li>
+        <li><a href="index.html#use-cases" data-en="Use Cases" data-pt="Casos de Uso">Use Cases</a></li>
+        <li>
+          <a href="contact.html" class="btn btn-outline" data-en="Request a Demo" data-pt="Pedir Demonstração">Request a Demo</a>
+        </li>
+      </ul>
+
+      <!-- Language Toggle -->
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span>|</span>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════
+       HERO (compact)
+  ══════════════════════════════════════════ -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <span class="hero-eyebrow" data-en="Get in Touch" data-pt="Entre em Contacto">Get in Touch</span>
+        <h1 data-en="Request a Demo" data-pt="Pedir Demonstração">Request a Demo</h1>
+        <p data-en="Tell us about your property search. We'll show you how Século Explorer can help." data-pt="Fale-nos sobre a sua pesquisa imobiliária. Mostraremos como o Século Explorer pode ajudar.">Tell us about your property search. We'll show you how Século Explorer can help.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FORM SECTION
+  ══════════════════════════════════════════ -->
+  <section class="section form-section">
+    <div class="container">
+      <div class="form-grid">
+
+        <!-- Left: Form -->
+        <div class="form-col">
+          <!-- Success message (hidden by default) -->
+          <div id="form-success" class="form-success" style="display: none;">
+            <div class="success-icon">&#x2713;</div>
+            <h3 data-en="Thank you!" data-pt="Obrigado!">Thank you!</h3>
+            <p data-en="We'll be in touch within 1 business day." data-pt="Entraremos em contacto num prazo de 1 dia útil.">We'll be in touch within 1 business day.</p>
+          </div>
+
+          <!-- Form -->
+          <form id="demo-form" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-name" data-en="Full Name" data-pt="Nome Completo">Full Name</label>
+                <input
+                  type="text"
+                  id="field-name"
+                  name="full_name"
+                  placeholder="Ana Silva"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-email" data-en="Email Address" data-pt="Endereço de Email">Email Address</label>
+                <input
+                  type="email"
+                  id="field-email"
+                  name="email"
+                  placeholder="ana@empresa.pt"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-company" data-en="Company / Organisation" data-pt="Empresa / Organização">Company / Organisation</label>
+                <input
+                  type="text"
+                  id="field-company"
+                  name="company"
+                  placeholder="Empresa Imobiliária Lda."
+                  autocomplete="organization"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-role" data-en="Your Role" data-pt="O Seu Papel">Your Role</label>
+                <select id="field-role" name="role" required>
+                  <option value="" data-en="Select your role..." data-pt="Selecione o seu papel...">Select your role...</option>
+                  <option value="investor" data-en="Real Estate Investor" data-pt="Investidor Imobiliário">Real Estate Investor</option>
+                  <option value="agency" data-en="Property Agency" data-pt="Agência Imobiliária">Property Agency</option>
+                  <option value="developer" data-en="Developer" data-pt="Promotor">Developer</option>
+                  <option value="other" data-en="Other" data-pt="Outro">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-looking" data-en="What are you looking for?" data-pt="O que está à procura?">What are you looking for?</label>
+                <textarea
+                  id="field-looking"
+                  name="looking_for"
+                  rows="4"
+                  placeholder="Describe the type of property, location, budget, and intended use..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-referral" data-en="How did you hear about us? (optional)" data-pt="Como nos conheceu? (opcional)">How did you hear about us? (optional)</label>
+                <input
+                  type="text"
+                  id="field-referral"
+                  name="referral"
+                  placeholder="LinkedIn, referral, Google..."
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" data-en="Send Request &#x2192;" data-pt="Enviar Pedido &#x2192;">Send Request &#x2192;</button>
+          </form>
+        </div>
+
+        <!-- Right: Contact info -->
+        <div class="info-col animate-on-scroll">
+          <h3 data-en="Get in Touch" data-pt="Entre em Contacto">Get in Touch</h3>
+          <p class="info-intro" data-en="We respond to all demo requests within 1 business day. The demo is conducted remotely via a short video call, tailored to your use case." data-pt="Respondemos a todos os pedidos de demonstração num prazo de 1 dia útil. A demonstração é realizada remotamente por videochamada, adaptada ao seu caso de uso.">We respond to all demo requests within 1 business day. The demo is conducted remotely via a short video call, tailored to your use case.</p>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-icon">&#x1F4CD;</span>
+              <span data-en="Based in Lisbon, Portugal" data-pt="Sediado em Lisboa, Portugal">Based in Lisbon, Portugal</span>
+            </li>
+            <li>
+              <span class="info-icon">&#x1F30D;</span>
+              <span data-en="Serving clients across Portugal &amp; Europe" data-pt="A servir clientes em Portugal e na Europa">Serving clients across Portugal &amp; Europe</span>
+            </li>
+            <li>
+              <span class="info-icon">&#x26A1;</span>
+              <span data-en="Demo available remotely via video call" data-pt="Demonstração disponível remotamente por videochamada">Demo available remotely via video call</span>
+            </li>
+          </ul>
+
+          <div class="info-card">
+            <p class="info-card-label" data-en="Covers" data-pt="Cobre">Covers</p>
+            <p class="info-card-value">ImóVirtual, SuperCasa + 9 portals</p>
+            <p class="info-card-label" data-en="Version" data-pt="Versão">Version</p>
+            <p class="info-card-value info-mono">v13</p>
+            <p class="info-card-label" data-en="Export formats" data-pt="Formatos de exportação">Export formats</p>
+            <p class="info-card-value info-mono">Excel / CSV (SheetJS)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Left: Brand -->
+        <div class="footer-brand">
+          <span class="footer-logo">Século Explorer</span>
+          <p class="footer-tagline" data-en="Intelligent property search for the Portuguese market." data-pt="Pesquisa imobiliária inteligente para o mercado português.">Intelligent property search for the Portuguese market.</p>
+        </div>
+
+        <!-- Centre: Navigation -->
+        <div>
+          <p class="footer-heading" data-en="Navigation" data-pt="Navegação">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="index.html" data-en="Home" data-pt="Início">Home</a></li>
+            <li><a href="index.html#how-it-works" data-en="How It Works" data-pt="Como Funciona">How It Works</a></li>
+            <li><a href="index.html#use-cases" data-en="Use Cases" data-pt="Casos de Uso">Use Cases</a></li>
+            <li><a href="contact.html" data-en="Contact" data-pt="Contacto">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Get Started -->
+        <div class="footer-nav-col">
+          <p class="footer-heading" data-en="Get Started" data-pt="Começar">Get Started</p>
+          <a href="contact.html" class="btn btn-outline" data-en="Request a Demo" data-pt="Pedir Demonstração">Request a Demo</a>
+          <a href="mailto:general@neus42.com" class="footer-email">general@neus42.com</a>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <span class="footer-copy" data-en="&copy; 2025 S&eacute;culo Explorer. All rights reserved." data-pt="&copy; 2025 S&eacute;culo Explorer. Todos os direitos reservados.">&copy; 2025 S&eacute;culo Explorer. All rights reserved.</span>
+        <div class="footer-lang">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <span>|</span>
+          <button class="lang-btn" data-lang="pt">PT</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════════ -->
+  <script src="js/nav.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/form.js"></script>
+
+
+  <!-- ══════════════════════════════════════════
+       PAGE-LEVEL STYLES (Contact-specific)
+  ══════════════════════════════════════════ -->
+  <style>
+    /* ── Contact Hero ── */
+    .contact-hero {
+      background: var(--color-primary);
+      background-image: repeating-linear-gradient(
+        135deg,
+        transparent,
+        transparent 59px,
+        rgba(200, 169, 110, 0.06) 59px,
+        rgba(200, 169, 110, 0.06) 60px
+      );
+      height: 320px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-hero-content {
+      max-width: 560px;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 16px;
+    }
+
+    .contact-hero h1 {
+      color: var(--color-white);
+      margin-bottom: 14px;
+    }
+
+    .contact-hero p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.05rem;
+    }
+
+    /* ── Form Section ── */
+    .form-section {
+      background: var(--color-bg);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    /* ── Form Fields ── */
+    .form-row {
+      margin-bottom: 20px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-field label {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-mid);
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      background: var(--color-white);
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      width: 100%;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--color-text);
+      transition: border-color var(--transition), box-shadow var(--transition);
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .form-field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A4A6A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      outline: none;
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px rgba(200, 169, 110, 0.15);
+    }
+
+    .form-field textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* Error state */
+    .input-error {
+      border-color: #e05252 !important;
+      box-shadow: 0 0 0 3px rgba(224, 82, 82, 0.12) !important;
+    }
+
+    .field-error {
+      font-size: 0.8rem;
+      color: #e05252;
+      margin-top: 4px;
+      display: block;
+    }
+
+    /* Submit button */
+    .form-submit {
+      width: 100%;
+      justify-content: center;
+      padding: 16px;
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+
+    /* ── Success Message ── */
+    .form-success {
+      text-align: center;
+      padding: 64px 32px;
+      background: var(--color-white);
+      border-radius: var(--radius);
+      border-top: 3px solid var(--color-accent);
+    }
+
+    .success-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--color-accent);
+      color: var(--color-white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+
+    .form-success h3 {
+      margin-bottom: 8px;
+    }
+
+    .form-success p {
+      color: var(--color-mid);
+    }
+
+    /* ── Info Column ── */
+    .info-col h3 {
+      margin-bottom: 14px;
+    }
+
+    .info-intro {
+      font-size: 0.95rem;
+      color: var(--color-mid);
+      line-height: 1.75;
+      margin-bottom: 32px;
+    }
+
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .info-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--color-mid);
+      line-height: 1.5;
+    }
+
+    .info-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .info-card {
+      background: var(--color-bg);
+      border: 1px solid var(--color-divider);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 16px;
+    }
+
+    .info-card-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-top: 12px;
+    }
+
+    .info-card-label:first-child {
+      margin-top: 0;
+    }
+
+    .info-card-value {
+      font-size: 0.88rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .info-mono {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-hero {
+        height: auto;
+        padding: 64px 0;
+      }
+
+      .info-card {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</body>
+</html>
