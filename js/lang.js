@@ -14,7 +14,7 @@
     translatables.forEach(function (el) {
       const text = el.dataset[lang];
       if (text !== undefined) {
-        el.textContent = text;
+        el.innerHTML = text;
       }
     });
 
